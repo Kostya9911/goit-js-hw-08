@@ -32,7 +32,6 @@ function updateForm() {
   const userData = JSON.parse(localStorage.getItem(KEY_STOR));
 
   if (userData) {
-    // console.log(userData);
     Object.entries(userData).forEach(([name, value]) => {
       form.elements[name].value = value;
     });
